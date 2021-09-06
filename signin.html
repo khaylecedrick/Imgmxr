@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link href="/build/tailwind.css" rel="stylesheet"> 
+</head>
+<body>
+    <div class="grid md:grid-cols-2">
+        <!----------------Backdrop-------------------------->
+        <div class="h-screen" style="background-image: url('pictures/bg.png');">
+            <div class="flex justify-center pt-60">
+                <img src="pictures/logo.png" alt="imgmxr">
+            </div>
+        </div>
+        <!-----------------Sign in-------------------------->
+        <div class="flex flex-col items-center justify-center bg-gray-200">
+            <h1 class="uppercase text-5xl font-bold text-center">login</h1>
+            <div class="flex items-center justify-center flex-col">
+                <div class="w-full py-3">
+                    <input id="username" name="username" type="username" class="shadow-2xl px-3 py-4 text-lg text-gray-700 placeholder-gray-400 bg-white rounded focus:outline-none focus:shadow-outline" placeholder="Username"/>
+                </div>
+                <div class="w-full py-3">
+                    <input id="password" name="password" type="password" class="shadow-2xl px-3 py-4 text-lg text-gray-700 placeholder-gray-400 bg-white rounded focus:outline-none focus:shadow-outline" placeholder="Password"/>
+                </div>
+            </div>
+            <div class="flex flex-row space-x-10 py-3">
+                <a class="font-bold" href="#">Forgot Password?</a>
+                <a class="font-bold" href="register.html">Create an account</a>
+            </div>
+            <button type="signin" class="text-white px-6 py-3 font-bold bg-gradient-to-r from-pink-400 to-gray-400 uppercase rounded shadow-2xl" type="button" style="transition: all 0.15s ease 0s;">
+                login
+            </button>
+        </div>
+    </div>
+</body>
+</html>
