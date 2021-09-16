@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.10 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.14 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -647,6 +647,14 @@ video {
   height: 100vh;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -661,14 +669,6 @@ video {
 
 .list-none {
   list-style-type: none;
-}
-
-.grid-flow-col {
-  grid-auto-flow: column;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -879,6 +879,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -955,17 +960,72 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:-mt-28 {
+    margin-top: -7rem;
+  }
+
+  .md\:h-40 {
+    height: 10rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:-mt-28 {
+    margin-top: -7rem;
+  }
+
+  .lg\:h-40 {
+    height: 10rem;
+  }
+
+  .lg\:justify-end {
+    justify-content: flex-end;
   }
 }
 
 @media (min-width: 1280px) {
+  .xl\:m-10 {
+    margin: 2.5rem;
+  }
+
+  .xl\:grid {
+    display: grid;
+  }
+
   .xl\:h-screen {
     height: 100vh;
   }
 
+  .xl\:grid-flow-col {
+    grid-auto-flow: column;
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:gap-5 {
+    gap: 1.25rem;
+  }
+
   .xl\:bg-cover {
     background-size: cover;
+  }
+
+  .xl\:p-10 {
+    padding: 2.5rem;
   }
 }

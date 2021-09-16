@@ -17,16 +17,16 @@
 </head>
 <body>
     <!-------------------------------------------Background------------------------------------------------>
-    <div id="collage" class="w-screen h-full p-10 xl:h-screen xl:bg-cover bg-scroll" style="background-image: url(img/bg.png);">
+    <div id="collage" class="w-screen p-10 h-screen xl:bg-cover" style="background-image: url(img/bg.png);">
         <!--2nd BG-->
         <div class="bg-white border-8 border-pink-400 bg-opacity-60 rounded-lg border-opacity-40 p-4">
             <!---Logo--->
-            <div class="flex justify-end">
-                <img class="h-40" src="img/logo1.png" alt="logo">
+            <div class="flex justify-center lg:justify-end">
+                <img class="h-20 md:h-40" src="img/logo1.png" alt="logo">
             </div>
-            <h1 class="-mt-28 text-center text-6xl font-bold text-pink-500 pb-10">Puzzle Game</h1>
+            <h1 class="lg:-mt-28 text-center text-4xl md:text-6xl font-bold text-pink-500 pb-10">Puzzle Game</h1>
             <!--Grids-->
-            <div class="grid items-center justify-center grid-flow-col grid-cols-2 gap-5">
+            <div class="grid items-center justify-center xl:grid-flow-col xl:grid-cols-2 xl:gap-5">
                 <!--LEFT SIDE-->
                 <div>
                     <div id="actualImageBox" class="flex flex-row items-center justify-center space-x-20 text-xl font-semibold text-black py-4">
@@ -49,8 +49,8 @@
                     </div>
                 </div>
                 <!--Right Side-->
-                <div class="flex justify-center bg-pink-400 bg-opacity-60">
-                    <ul id="sortable" class="inline-block m-10 list-none">
+                <div class="flex justify-center items-center bg-pink-400 bg-opacity-60 h-auto">
+                    <ul id="sortable" class="inline-block xl:p-10 list-none">
                         <li id="sortable" class="float-left bg-auto cursor-pointer">
                         </li>
                     </ul>
