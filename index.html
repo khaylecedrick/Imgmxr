@@ -17,7 +17,7 @@
 </head>
 <body>
     <!-------------------------------------------Background------------------------------------------------>
-    <div id="collage" class="w-screen p-10 h-screen xl:bg-cover" style="background-image: url(img/bg.png);">
+    <div id="collage" class="w-screen p-10 h-full bg-repeat-y" style="background-image: url(img/bg1.png);">
         <!--2nd BG-->
         <div class="bg-white border-8 border-pink-400 bg-opacity-60 rounded-lg border-opacity-40 p-4">
             <!---Logo--->
@@ -49,9 +49,9 @@
                     </div>
                 </div>
                 <!--Right Side-->
-                <div class="flex justify-center items-center bg-pink-400 bg-opacity-60 h-auto">
-                    <ul id="sortable" class="inline-block xl:p-10 list-none">
-                        <li id="sortable" class="float-left bg-auto cursor-pointer">
+                <div class="flex justify-center items-center bg-pink-400 bg-opacity-60">
+                    <ul id="sortable" class="grid grid-cols-4 inline-block lg:p-12 xl:p-10 list-none ">
+                        <li id="sortable" class="cursor-pointer">
                         </li>
                     </ul>
                 </div>
@@ -71,7 +71,11 @@
     </div>
     <script>
         var images = [
-            { src: 'img/game-r.png', title: 'Sample Image' },
+            { src: 'img/game-a.jpg', title: 'Go Live'},
+            {src: 'img/game-b.jpg', title: 'AMI Group'},
+            { src: 'img/game-c.jpg', title: 'Dynamic'},
+            { src: 'img/game-d.jpg', title: 'Origami'},
+            { src: 'img/game-e.jpg', title: 'All Brands'},
         ];
 
         $(function () {
